@@ -1,0 +1,52 @@
+# Strapi unvback — Docker stack
+#
+# Default (SQLite, single container):
+#   cp .env.example .env
+#   # set APP_KEYS and secrets in .env
+#   docker compose up --build
+#   → http://localhost:1337/admin
+#
+# With PostgreSQL (optional second service):
+#   docker compose --profile postgres up --build
+#   Use .env with DATABASE_CLIENT=postgres and DATABASE_URL pointing at postgres:5432
+#   (see .env.docker-postgres.example)
+
+services:
+  strapi:
+    build: .
+    image: unvback:latest
+    restart: unless-stopped
+    ports:
+      - "1337:1337"
+    env_file:
+      - .env
+    environment:
+      HOST: 0.0.0.0
+      PORT: 1337
+    volumes:
+      - strapi_tmp:/opt/app/.tmp
+      - strapi_uploads:/opt/app/public/uploads
+
+  postgres:
+    profiles:
+      - postgres
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DATABASE_USERNAME:-strapi}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-strapi}
+      POSTGRES_DB: ${DATABASE_NAME:-strapi}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DATABASE_USERNAME:-strapi} -d ${DATABASE_NAME:-strapi}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  strapi_tmp:
+  strapi_uploads:
+  postgres_data:

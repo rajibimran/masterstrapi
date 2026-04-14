@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "heroes",
+  "info": {
+    "singularName": "hero",
+    "pluralName": "heroes",
+    "displayName": "Hero"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "page": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "slides": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "promoVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "ctas": {
+      "type": "component",
+      "component": "hero.cta-button",
+      "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "seo.entry",
+      "repeatable": false
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

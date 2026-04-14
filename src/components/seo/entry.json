@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_seo_entries",
+  "info": {
+    "displayName": "SEO Entry",
+    "description": "Shared SEO metadata payload"
+  },
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "required": true
+    },
+    "metaKeywords": {
+      "type": "string"
+    },
+    "canonicalPath": {
+      "type": "string"
+    },
+    "openGraphImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "openGraphImageAlt": {
+      "type": "string"
+    },
+    "twitterCard": {
+      "type": "enumeration",
+      "enum": [
+        "summary",
+        "summary_large_image"
+      ]
+    },
+    "structuredData": {
+      "type": "json"
+    },
+    "noIndex": {
+      "type": "boolean",
+      "default": false
+    },
+    "snippetForAiOverview": {
+      "type": "text"
+    }
+  }
+}

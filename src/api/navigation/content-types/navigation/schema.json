@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigations",
+  "info": {
+    "singularName": "navigation",
+    "pluralName": "navigations",
+    "displayName": "Navigation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "enumeration",
+      "enum": [
+        "header",
+        "footer"
+      ],
+      "default": "header"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

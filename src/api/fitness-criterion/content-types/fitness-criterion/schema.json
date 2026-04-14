@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fitness_criteria",
+  "info": {
+    "singularName": "fitness-criterion",
+    "pluralName": "fitness-criteria",
+    "displayName": "Fitness Criterion"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

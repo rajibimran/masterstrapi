@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_gallery_items",
+  "info": {
+    "displayName": "About Gallery Item"
+  },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "required": true
+    },
+    "alt": {
+      "type": "string"
+    }
+  }
+}

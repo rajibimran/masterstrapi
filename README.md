@@ -1,6 +1,12 @@
-# 🚀 Getting started with Strapi
+# unvback (Strapi v5)
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+Universal Strapi backend — **SQLite by default**; **PostgreSQL** when `DATABASE_CLIENT=postgres` (see `.env.example`). Copy `.env.example` to `.env`, set secrets, then see [DEPLOY.md](./DEPLOY.md) for deploy, Postgres dumps, and `npm run seed:full`.
+
+**Docker:** `Dockerfile` + `docker-compose.yml` (optional `--profile postgres`). **GitHub:** [GITHUB.md](./GITHUB.md).
+
+---
+
+Strapi includes a [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) for local development and operations.
 
 ### `develop`
 

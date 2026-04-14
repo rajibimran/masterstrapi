@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footer_service_links",
+  "info": {
+    "singularName": "footer-service-link",
+    "pluralName": "footer-service-links",
+    "displayName": "Footer Service Link"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

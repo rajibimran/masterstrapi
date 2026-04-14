@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_timeline_items",
+  "info": {
+    "displayName": "About Timeline Item"
+  },
+  "attributes": {
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+node_modules
+dist
+build
+.tmp
+.git
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+coverage
+.strapi
+.strapi-updater.json
+*.dump
+/backups

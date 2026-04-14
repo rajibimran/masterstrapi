@@ -1,0 +1,127 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "missionTitle": {
+      "type": "string",
+      "required": true
+    },
+    "missionText": {
+      "type": "richtext",
+      "required": true
+    },
+    "missionImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "centerTitle": {
+      "type": "string",
+      "required": true
+    },
+    "centerText": {
+      "type": "richtext",
+      "required": true
+    },
+    "centerImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "valuesSectionTitle": {
+      "type": "string"
+    },
+    "values": {
+      "type": "component",
+      "component": "about.value-item",
+      "repeatable": true
+    },
+    "facilityGalleryTitle": {
+      "type": "string"
+    },
+    "facilityGallerySubtitle": {
+      "type": "text"
+    },
+    "gallery": {
+      "type": "component",
+      "component": "about.gallery-item",
+      "repeatable": true
+    },
+    "visionTitle": {
+      "type": "string"
+    },
+    "visionText": {
+      "type": "richtext"
+    },
+    "corporateProfileTitle": {
+      "type": "string"
+    },
+    "corporateProfileText": {
+      "type": "richtext"
+    },
+    "historyTitle": {
+      "type": "string"
+    },
+    "historyText": {
+      "type": "richtext"
+    },
+    "chairmanMessageTitle": {
+      "type": "string"
+    },
+    "chairmanMessageText": {
+      "type": "richtext"
+    },
+    "chairmanPhoto": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "managingDirectorMessageTitle": {
+      "type": "string"
+    },
+    "managingDirectorMessageText": {
+      "type": "richtext"
+    },
+    "managingDirectorPhoto": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "timelineTitle": {
+      "type": "string"
+    },
+    "timeline": {
+      "type": "component",
+      "component": "about.timeline-item",
+      "repeatable": true
+    },
+    "brochureFile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "seo.entry",
+      "repeatable": false
+    }
+  }
+}

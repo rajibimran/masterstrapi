@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_about_value_items",
+  "info": {
+    "displayName": "About Value Item"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "text"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_service_timeline_steps",
+  "info": {
+    "displayName": "Service Timeline Step"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

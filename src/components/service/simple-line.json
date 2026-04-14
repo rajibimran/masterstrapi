@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_service_simple_lines",
+  "info": {
+    "displayName": "Service Simple Line"
+  },
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

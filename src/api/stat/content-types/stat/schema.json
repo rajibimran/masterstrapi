@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stats",
+  "info": {
+    "singularName": "stat",
+    "pluralName": "stats",
+    "displayName": "Stat"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

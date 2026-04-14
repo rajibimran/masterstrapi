@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "country_guidelines",
+  "info": {
+    "singularName": "country-guideline",
+    "pluralName": "country-guidelines",
+    "displayName": "Country Guideline"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "countryName": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "countryName"
+    },
+    "guideline": {
+      "type": "richtext"
+    },
+    "flagImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "seo.entry",
+      "repeatable": false
+    }
+  }
+}

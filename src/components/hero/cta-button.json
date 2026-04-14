@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_hero_cta_buttons",
+  "info": {
+    "displayName": "Hero CTA Button"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "link"
+      ],
+      "default": "primary"
+    }
+  }
+}
