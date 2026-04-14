@@ -1,0 +1,11 @@
+Create backup from golden/config root folder: tar czf unvback-demo-state.tar.gz .tmp/data.db public/uploads
+On the remote server:
+git clone https://github.com/ORG/unvback.git
+cd unvback
+cp .env.example .env   # then fill secrets (or use team vault)
+npm ci
+npm run build
+## copy yhe .gz to the root folder and run from root folder:
+tar xzf /path/to/unvback-demo-state.tar.gz
+npm run start
+
